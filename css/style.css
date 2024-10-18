@@ -27,4 +27,16 @@ h1 {
 
 body{
     background-image: url(../img/cork.png);
+    font-family: "Sometype Mono", serif;
+}
+.card{
+    width: 350px;
+}
+.card-body{
+    background-color: red;
+    margin: 1rem;
+   
+}
+.card-text{
+    margin: 0 1rem 1rem 1rem;
 }
