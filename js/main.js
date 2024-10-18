@@ -12,8 +12,11 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
 
             const markup = `
-        <div class="col-md-4 g-5">
+         <div class="col-md-4 g-5">
                     <div class="card" >
+                        <div class="card-title d-flex justify-content-center">
+                            <img src="./img/pin.svg" alt="">
+                        </div>
                         <div class="card-body">
                             <img src="${url}"
                                 class="card-img-top" alt="...">
@@ -22,7 +25,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                             <p class="card-text p-2">${title}</p>
                         </div>
                     </div>
-                </div>
+                </div> 
         `
             photoElements += markup
         });
@@ -30,4 +33,4 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     }).catch(error => {
         console.error(error);
-    });
+    }); 

@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-        /* header */
+
+/* header */
 header {
     background-image: url("../img/wall.png");
     font-family: "Sometype Mono", monospace;
@@ -25,18 +26,21 @@ h1 {
 
 /* main */
 
-body{
+body {
     background-image: url(../img/cork.png);
     font-family: "Sometype Mono", serif;
 }
-.card{
+
+.card {
     width: 350px;
 }
-.card-body{
+
+.card-body {
     margin: 1rem;
-   
+
 }
-.card-text{
+
+.card-text {
     margin: 0 1rem 1rem 1rem;
     height: 70px;
 }
@@ -44,7 +48,12 @@ body{
 
 /* hover */
 
-.card:hover{
+.card:hover {
     scale: 1.1;
     rotate: 30deg;
+
+}
+
+.card:hover .card-title{
+    visibility: hidden;
 }
