@@ -1,24 +1,30 @@
-*{
-    margin:0 ;
-    padding:0 ;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
+        /* header */
 header {
-    font-family: "Sometype Mono", monospace;
-    
     background-image: url("../img/wall.png");
-    
+    font-family: "Sometype Mono", monospace;
 }
 
-h1{
+h1 {
+
     font-size: 3rem;
     text-align: center;
     font-weight: 500;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+}
+
+/* main */
+
+body{
+    background-image: url(../img/cork.png);
 }
