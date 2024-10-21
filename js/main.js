@@ -25,7 +25,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                             <p class="card-text p-2">${title}</p>
                         </div>
                     </div>
-                </div> 
+         </div> 
         `
             photoElements += markup
         });
@@ -36,7 +36,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     }); 
 
     //milestone 2
-
+    
     const overlayEl = document.getElementById("overlay")
 
     const images = imageGalleryEl.querySelectorAll("img");
@@ -44,4 +44,10 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         image.addEventListener("click", ()=>{
             overlayEl.style.display = 'block';
         })
+    })
+
+    const buttonEl = document.getElementById("close-button")
+
+    buttonEl.addEventListener("click", ()=>{
+        overlayEl.style.display = 'none';
     })
