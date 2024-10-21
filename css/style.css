@@ -72,3 +72,9 @@ body {
     left: 0;
     display: none;
 }
+
+#close-button{
+    width: 3.5rem;
+    border-radius: 5%;
+
+}
