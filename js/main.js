@@ -13,6 +13,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
         photos.forEach(photo => {
             const { url, title } = photo
 
+            const capitalaizeTitle = title.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
             const markup = `
          <div class=" col-xl-4 col-lg-6 col-md-6 col-sm-12 g-5">
@@ -25,7 +26,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                                 class="card-img-top" alt="...">
                         </div>
                         <div>
-                            <p class="card-text p-2">${title.charAt(0).toUpperCase() + title.slice(1)}</p>
+                            <p class="card-text p-2">${capitalaizeTitle}</p>
                         </div>
                     </div>
          </div> 

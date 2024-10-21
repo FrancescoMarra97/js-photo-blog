@@ -7,7 +7,7 @@
 /* header */
 header {
     background-image: url("../img/wall.png");
-    font-family: "Sometype Mono", monospace;
+    font-family: 'Sometype Mono', monospace;
 }
 
 h1 {
@@ -28,8 +28,9 @@ h1 {
 
 body {
     background-image: url(../img/cork.png);
-    font-family: "Sometype Mono", serif;
+    font-family: 'Edu TAS Beginner', sans-serif;
 }
+
 
 .card {
     width: 350px;
@@ -73,7 +74,7 @@ body {
     display: none;
 }
 
-#close-button{
+#close-button {
     width: 3.5rem;
     border-radius: 5%;
 
