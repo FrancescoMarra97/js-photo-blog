@@ -1,4 +1,7 @@
 const imageGalleryEl = document.getElementById("image-gallery")
+const overlayImgEl = document.getElementById("overlay-img")
+const overlayEl = document.getElementById("overlay")
+const buttonEl = document.getElementById("close-button")
 
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
@@ -30,24 +33,25 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
             photoElements += markup
         });
         imageGalleryEl.innerHTML = photoElements
+        //milestone 2
+        const images = document.querySelectorAll("#image-gallery img");
+        images.forEach(image => {
+            image.addEventListener("click", () => {
+                console.log("Immagine cliccata:", image.src);
+                overlayEl.style.display = 'block';
+                overlayImgEl.src = image.src
+            })
+        })
+        buttonEl.addEventListener("click", () => {
+            overlayEl.style.display = 'none';
+        })
+        
 
     }).catch(error => {
         console.error(error);
-    }); 
+    });
 
-    //milestone 2
-    
-    const overlayEl = document.getElementById("overlay")
 
-    const images = imageGalleryEl.querySelectorAll("img");
-    images.forEach(image =>{
-        image.addEventListener("click", ()=>{
-            overlayEl.style.display = 'block';
-        })
-    })
 
-    const buttonEl = document.getElementById("close-button")
 
-    buttonEl.addEventListener("click", ()=>{
-        overlayEl.style.display = 'none';
-    })
+

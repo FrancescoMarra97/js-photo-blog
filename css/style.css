@@ -51,6 +51,7 @@ body {
 .card:hover {
     scale: 1.1;
     rotate: 10deg;
+    cursor: pointer;
 
 }
 
