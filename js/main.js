@@ -34,3 +34,14 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     }).catch(error => {
         console.error(error);
     }); 
+
+    //milestone 2
+
+    const overlayEl = document.getElementById("overlay")
+
+    const images = document.querySelectorAll("#image-gallery img");
+    images.forEach(image =>{
+        image.addEventListener("click", ()=>{
+            
+        })
+    })

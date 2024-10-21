@@ -50,7 +50,7 @@ body {
 
 .card:hover {
     scale: 1.1;
-    rotate: 30deg;
+    rotate: 10deg;
 
 }
 
@@ -71,3 +71,6 @@ body {
     left: 0;
 }
 
+#overlay{
+    display: none;
+}
