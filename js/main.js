@@ -25,7 +25,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
                                 class="card-img-top" alt="...">
                         </div>
                         <div>
-                            <p class="card-text p-2">${title}</p>
+                            <p class="card-text p-2">${title.charAt(0).toUpperCase() + title.slice(1)}</p>
                         </div>
                     </div>
          </div> 
