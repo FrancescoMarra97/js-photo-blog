@@ -39,7 +39,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     const overlayEl = document.getElementById("overlay")
 
-    const images = document.querySelectorAll("#image-gallery img");
+    const images = imageGalleryEl.querySelectorAll("img");
     images.forEach(image =>{
         image.addEventListener("click", ()=>{
             overlayEl.style.display = 'block';
