@@ -42,6 +42,6 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6")
     const images = document.querySelectorAll("#image-gallery img");
     images.forEach(image =>{
         image.addEventListener("click", ()=>{
-            
+            overlayEl.style.display = 'block';
         })
     })
